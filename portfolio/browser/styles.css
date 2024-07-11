@@ -1,0 +1,105 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.fixed-container {
+  position: fixed;
+  top: 50px; /* Esempio di altezza dal top */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Z-index per sovrapposizioni, se necessario */
+  background-color: #ffffff; /* Colore di sfondo */
+  /* Altri stili a tuo piacimento */
+}
+
+header {
+  background-color: #209cee;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ds-header {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1em 0;
+}
+
+.intro {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
+
+.project {
+  background: white;
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #209cee;
+}
+
+.project a.button {
+  display: inline-block;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
+}
+
+.project a.button:hover {
+  background-color: #209cee;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #209cee;
+  color: white;
+  margin-top: 3em;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+}
